@@ -695,7 +695,7 @@ int main(int argc, char **argv)
 		.end_at		= LONG_MAX - 1,
 		.max_write_rate = 0,
 		/* If stdout isn't a terminal, supress progress. */
-		.show_progress	= isatty(STDOUT_FILENO),
+		.show_progress	= 1,
 	};
 
 	/* Read parameters. */
